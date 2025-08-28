@@ -1,0 +1,17 @@
+let mapleader=" "
+
+set clipboard+=unnamed
+map <leader>rn <Action>(RenameElement)
+map ge <Action>(GotoNextError)
+map <leader>fo <Action>(ReformatCode)
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+map <leader>ac <action>(ShowIntentionActions)
+map <leader>G <Action>(Generate)
+inoremap jk <ESC>
+
+nnoremap <A-l> :tabnext<CR>
+nnoremap <A-h> :tabprev<CR>
+inoremap <A-j> <down>
+inoremap <A-k> <up>
